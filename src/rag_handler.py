@@ -62,7 +62,7 @@ class RAGHandler:
         temperature=0.7은 생성된 텍스트의 창의성을 제어하는 매개변수로, 1.0보다 낮으면 더 결정적인(덜 창의적인) 텍스트를 생성하고, 높은 값은 더 창의적인 텍스트를 생성합니다.
         """
         pipe = pipeline(
-            "question-answering",
+            "text-generation",
             model=model,
             tokenizer=tokenizer,
             device=0,
